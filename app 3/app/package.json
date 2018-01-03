@@ -1,0 +1,25 @@
+{
+  "name": "webpack-demo",
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "webpack": "^3.10.0"
+  }
+  { 
+    "presets": [
+        "es2015"
+    ],
+    "plugins": [
+
+    ]
+  }
+  <!-- 然后，改写package.json。 -->
+  {
+    // ...
+    "devDependencies": {
+        "babel-cli": "^6.0.0"
+    },
+    "scripts": {
+        "build": "babel src -d dist"
+    },
+  }
+}
